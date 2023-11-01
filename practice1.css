@@ -1,0 +1,28 @@
+/* Apply a style to all <h1> elements */
+h1 {
+    color: black;
+    font-size: 32px;
+}
+
+body {
+    background-image: url('Kansas-Jayhawks-Logo-history.jpg');
+    background-color: red;
+    background-blend-mode: screen;
+    
+}
+
+.profile-and-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-and-info img {
+    margin-right: 10px;
+}
+
+
+p {
+    font-weight: bold;
+    color: navy;
+    font-size: 16px;
+}

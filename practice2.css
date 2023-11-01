@@ -1,0 +1,12 @@
+/* Apply a style to all <h1> elements */
+h1 {
+    color: black;
+    font-size: 32px;
+}
+
+#my-paragraph {
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    padding: 10px;
+}

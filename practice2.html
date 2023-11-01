@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice2</title>
+    <link rel="stylesheet" type="text/css" href="practice2.css"/>
+</head>
+
+<body>
+    <h1>Color Changer</h1>
+    <p id="my-paragraph">
+        In the world of curious happenings and delightful peculiarities, there exists a place where time seems to dance <br>
+        to its own whimsical tune. Imagine a quaint little café tucked away in a corner of an old, cobblestone street. <br>
+        The aroma of freshly brewed coffee mingles with the sweet scent of pastries just out of the oven. As you sip your <br>
+        cappuccino and gaze out the window, you're treated to a mesmerizing display of pigeons engaged in a high-stakes game of <br>
+        'Feathered Chess.' Yes, it's a realm where teapots converse with sugar bowls, and where the shadows of street lamps perform <br>
+        an enchanting waltz under the moonlight. In this whimsical realm, the ordinary becomes extraordinary, and the mundane <br>
+        is a canvas for the extraordinary <br>
+    </p>
+    <form onsubmit="changeColor(); return false;">
+        <label for="R-value">Enter R value:</label>
+        <input type="text" id="R-value" name="R-value" size="5"> <br>
+        <label for="G-value">Enter G value:</label>
+        <input type="text" id="G-value" name="G-value" size="5"> <br>
+        <label for="B-value">Enter B value:</label>
+        <input type="text" id="B-value" name="B-value" size="5"> <br>
+        <label for="W-value">Enter Border Width:</label>
+        <input type="text" id="W-value" name="W-value" size="5"> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        function changeColor() {
+            var R = document.getElementById("R-value").value;
+            var G = document.getElementById("G-value").value;
+            var B = document.getElementById("B-value").value;
+            var W = document.getElementById("W-value").value;
+            var rgbColor = 'rgb(' + R + ',' + G + ',' + B + ')';
+
+            document.getElementById("my-paragraph").style.color = rgbColor;
+
+            document.getElementById("my-paragraph").style.borderColor = rgbColor;
+
+            document.getElementById("my-paragraph").style.borderWidth = W + "px";
+        } 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice3</title>
+    <link rel="stylesheet" type="text/css" href="practice2.css"/>
+</head>
+
+<body>
+    <h1>Password Checker</h1>
+    <form onsubmit="checkPassword(); return false;">
+        <label for="pass1">Enter Password (Must be at least 8 characters Long):</label> <br>
+        <input type="text" id="pass1" name="pass1" size="10"> <br>
+        <label for="pass2">Verify Password:</label> <br>
+        <input type="text" id="pass2" name="pass2" size="10"> <br>
+        <input type="submit" value="Submit">
+        alert()
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        function checkPassword() {
+            var pass1 = document.getElementById("pass1").value;
+            var pass2 = document.getElementById("pass2").value;
+            
+            if (pass1.length < 8) {
+                alert("Password is too short!");
+            }
+            else if (pass1 != pass2) {
+                alert("Passwords do not match!");
+            }
+            else {
+                alert("Passwords Match!")
+            }
+        } 
+    </script>
+
+</body>
+
+</html>
